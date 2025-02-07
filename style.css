@@ -1,16 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background: url('background.gif') no-repeat center center fixed;
+    background: url('background.gif') no-repeat center center;
     background-size: cover;
-}
-
-.container {
-    margin-top: 20%;
 }
 
 h1 {
     color: #d81b60;
+    margin-top: 50px;
 }
 
 .buttons {
@@ -24,7 +21,7 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 #yes {
@@ -38,11 +35,7 @@ button {
     position: absolute;
 }
 
-.hidden {
-    display: none;
-}
-
-#result img {
-    width: 200px;
+.venom-chibi {
+    width: 250px;
     margin-top: 20px;
 }
