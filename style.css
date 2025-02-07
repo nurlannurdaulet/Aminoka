@@ -8,14 +8,16 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    background: url('background.gif') no-repeat center center;
+    background: url('background.gif') no-repeat center bottom;
     background-size: 250px 250px;
-    background-position: bottom;
 }
 
 h1 {
     color: #d81b60;
-    margin-top: 50px;
+    margin-top: 20px;
+    font-size: 30px; /* Немного уменьшили основной текст */
+    max-width: 90%;
+    word-wrap: break-word;
 }
 
 .buttons {
@@ -43,26 +45,30 @@ button {
     position: absolute;
 }
 
-/* Новый стиль для результата после нажатия "Да" */
+/* Контейнер для результата после нажатия "Да" */
 .result {
-    position: absolute;
-    bottom: 5%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
     background: none;
 }
 
-/* Уменьшенный текст после нажатия "Да" */
+/* Немного уменьшим текст, чтобы он не обрезался */
 .big-text {
-    font-size: 40px;
+    font-size: 35px; /* Было 40px */
     color: #d81b60;
-    margin-bottom: 20px;
+    text-align: center;
+    max-width: 90%;
+    word-wrap: break-word;
+    margin-top: 20px;
 }
 
-/* Картинка Venom теперь в формате .jpg */
+/* Картинка Venom на весь экран */
 .full-screen {
     width: auto;
-    height: 70vh;
+    height: 70vh; /* 70% от высоты экрана */
+    max-width: 90%;
 }
