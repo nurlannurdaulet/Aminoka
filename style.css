@@ -1,8 +1,16 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
     background: url('background.gif') no-repeat center center;
-    background-size: 250px 250px; /* Фон 250x250 */
+    background-size: 250px 250px;
+    background-position: bottom;
 }
 
 h1 {
@@ -37,21 +45,24 @@ button {
 
 /* Новый стиль для результата после нажатия "Да" */
 .result {
+    position: absolute;
+    bottom: 5%; /* Всё расположено внизу экрана */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    background: none;
 }
 
+/* Текст теперь над картинкой, но тоже внизу */
 .big-text {
-    font-size: 80px; /* Большой текст */
+    font-size: 50px;
     color: #d81b60;
     margin-bottom: 20px;
 }
 
+/* Картинка появится только после нажатия "Да" */
 .full-screen {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover; /* Веном на весь экран */
+    width: auto;
+    height: 70vh; /* Занимает 70% экрана */
 }
