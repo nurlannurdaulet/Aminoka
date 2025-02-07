@@ -3,8 +3,10 @@ let noButton = document.getElementById("no");
 
 function yesClick() {
     document.body.innerHTML = `
-        <h1>Теперь ты навсегда мой Веном💘</h1>
-        <img src="venom_chibi.jpg" class="venom-chibi">
+        <div class="result">
+            <h1 class="big-text">Теперь ты навсегда мой Веном💘</h1>
+            <img src="venom-chibi.png" class="full-screen">
+        </div>
     `;
 }
 
