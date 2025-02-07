@@ -39,3 +39,13 @@ button {
     width: 250px;
     margin-top: 20px;
 }
+.full-screen {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Заполняет экран без искажений */
+}
+
+.big-text {
+    font-size: 50px;
+    color: #d81b60;
+}
