@@ -8,6 +8,7 @@ function yesClick() {
             <img src="venom-chibi.png" class="full-screen">
         </div>
     `;
+    document.body.style.background = "none"; // Убираем background.gif
 }
 
 function noClick() {
