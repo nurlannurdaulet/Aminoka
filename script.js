@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     noButton.addEventListener("click", function () {
         if (noSize > 5) { // Чтобы кнопка не исчезла полностью
-            noSize -= 2; // Уменьшаем кнопку "Нет"
+            noSize -= 5; // Уменьшаем кнопку "Нет" быстрее
             noButton.style.fontSize = noSize + "px";
         }
-        yesSize += 5; // Увеличиваем кнопку "Да"
+        yesSize += 10; // Увеличиваем кнопку "Да" быстрее
         yesButton.style.fontSize = yesSize + "px";
     });
 
