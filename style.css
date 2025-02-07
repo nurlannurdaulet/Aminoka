@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background: url('background.gif') no-repeat center center;
-    background-size: cover;
+    background-size: 250px 250px; /* Фон 250x250 */
 }
 
 h1 {
@@ -35,17 +35,23 @@ button {
     position: absolute;
 }
 
-.venom-chibi {
-    width: 250px;
-    margin-top: 20px;
-}
-.full-screen {
-    width: 100vw;
+/* Новый стиль для результата после нажатия "Да" */
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
-    object-fit: cover; /* Заполняет экран без искажений */
 }
 
 .big-text {
-    font-size: 50px;
+    font-size: 80px; /* Большой текст */
     color: #d81b60;
+    margin-bottom: 20px;
+}
+
+.full-screen {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Веном на весь экран */
 }
